@@ -1,0 +1,33 @@
+###recipe details
+
+GET http://localhost:3000/recipe-api/recipes
+
+###
+GET http://localhost:3000/recipe-api/recipes/68f4bfbceef8156f4e1ab817
+
+###
+POST http://localhost:3000/recipe-api/recipes
+Content-Type: application/json
+
+{
+   "title":"potato fry",
+   "ingredients":"onion,potato,etc..",
+   "instructions":"boil potatoes first",
+   "time":"5 mins",
+   "recipeImage":"img"
+}
+
+###
+PUT http://localhost:3000/recipe-api/recipes/68f4bfbceef8156f4e1ab817
+Content-Type: application/json
+
+{
+   "title":"potato fry",
+   "ingredients":"onion,potato,etc..",
+   "instructions":"boil potatoes first",
+   "time":"35 mins",
+   "recipeImage":"img"
+}
+
+###
+DELETE http://localhost:3000/recipe-api/recipes/68f4c0c7f9573315df992f97
